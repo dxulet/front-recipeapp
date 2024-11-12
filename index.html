@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foodie - Recipe Explorer</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#" class="brand-name">Foodie</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#" data-view="home" class="nav-link active">Home</a></li>
+                    <li><a href="#favorites" data-view="favorites" class="nav-link">Favorites</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-input" placeholder="Search recipes...">
+                <div class="suggestions"></div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="loading"></div>
+            <div class="recipes-grid"></div>
+        </main>
+
+        <div class="modal">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <div class="recipe-details"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
